@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright (c) Orange Studio 2022</Copyright>
+    <Description>A opreation system in game, Oranges' Story.</Description>
+    <Authors>Orange233</Authors>
+    <Company>Orange Studio</Company>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Work\Project\Game\Other\OsS.OSs\OsS.OSs.TypeOS\OsS.OSs.TypeOS.xml</DocumentationFile>
+    <DefineConstants>TRACE;__CONSOLE_APP_</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Work\Project\Game\Other\OsS.OSs\OsS.OSs.TypeOS\OsS.OSs.TypeOS.xml</DocumentationFile>
+    <DefineConstants>TRACE;__CONSOLE_APP_</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
